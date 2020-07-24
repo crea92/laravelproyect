@@ -15,7 +15,7 @@ class CrearTablaUsuarios extends Migration
     {
         Schema::create('usuarios', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('imagen');
+            $table->string('imagen')->nullable();
             $table->string('nombre');
             $table->string('ape_paterno');
             $table->string('ape_materno');
